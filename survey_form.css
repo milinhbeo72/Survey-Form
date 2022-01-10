@@ -1,0 +1,112 @@
+#bg{
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -1;
+
+}
+#bg img{
+    /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+ 
+
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+h1{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    color: rgb(202, 130, 202)
+
+}
+#description{
+    font-size: 15px;
+    text-align: center;
+    font-family: -apple-system;
+    font-style: italic;
+    color: rgb(202, 130, 202);
+    font-weight: bolder;
+    text-decoration-thickness: 2px;
+    
+
+}
+form{
+    background-color: #fff1f2	;
+    text-align:justify;
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 40px;
+    width: 550px;
+    height:fit-content;
+    margin: auto;
+    position: relative;
+    
+    
+    
+}
+#name-label{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+}
+#email-label{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+}
+#number-label{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+}
+#dropdown{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+}
+#other{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+}
+button{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(202, 130, 202);
+    border-width: 4px;
+    background-color: rgb(202, 130, 202);
+    border: solid;
+    font-weight: bold;
+    transition: all 0.3s;
+   
+}
+button:hover{
+    background-color: rgb(192, 253, 255);
+    box-shadow: 0 0.5em 0.5em -0.4em  rgb(202, 130, 202);
+    opacity: 0.8;
+}

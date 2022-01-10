@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="bg">
+        <img src="cloud.jpg" alt ="">
+    </div>
+    <main class ="grid-container" >
+        <div>
+            <h1 id="title">Wooden Stem Toy Survey</h1>
+            <p id = "description">
+                We nuorish a dream to open a second-hand toy store so that every children 
+                can have a good wooden toy and their action contributes to the growth of environment!
+            </p>
+        </div>
+        <form action="survey" id ="survey-form">
+            <label  for="name">Name</label>
+            <br>
+            <input id="name-label" type="text" required placeholder="Enter your name"> 
+            <br>
+            <label id="email-label" for="email">Email</label>
+            <br>
+            <input id = "email-label" type="email" required placeholder="Enter your email">
+            <br>
+            <label id="number-label" for="age">Age</label>
+            <br>
+            <input id ="number-label" type="number" min="17" max="100"> 
+            <br>
+            <label  for="current job">What is your current professional?<label>
+            <br>
+            <select required  name="jobs" id="dropdown">
+                <option selected disabled value="question">Select your current job</option>
+                <option value="chef">Chef</option>
+                <option value="sale">Sale</option>
+                <option value="marketing">Marketing</option>
+                <option value="supply chain">Supply Chain</option>
+                <option value="other">Others</option>
+            </select>
+            <br>
+            <label  for="other"> If others, please type it here</label>
+            <br>
+            <input id ="other" type="text" placeholder="Please type your current profession">
+            <br>
+            <section class = "familystatus" required>
+
+                <label for ="status">Your family status:</label>
+                <br>
+                <input name="status" type="radio" id ="status" value = "single">
+                <label name="status" for="single">Single</label>
+                <br>
+                <input name ="status" type="radio" id ="status" value= "married">
+                <label name ="status" for ="married">Married</label>
+                <br>
+                <input name ="status" type="radio" id ="status" value= "divorced">
+                <label for="divorced">Divorced</label>
+                <br>
+                <input name ="status" type="radio" id ="status" value ="other">
+                <label for="other">Other</label>
+            </section> 
+            <section>
+                <label  for="children">If you have children, how old are they?</label>
+                <br>
+                <input id ="childrenage" type="checkbox">
+                <label for="children">From 0 to 3 years oldd</label>
+                <br>
+                <input id = "childrenage" type="checkbox">
+                <label for ="children">From 3 to 6 years old</label>
+                <br>
+                <input id = "childrenage" type="checkbox">
+                <label for="children"> above 7 years old </label>
+            </section>
+            <section aria-required="true">
+                <label for= "frequency"> How often do you buy toy for children?</label>
+                <br>
+                <input name ="frequency" id = "frequency" type="radio" value="lesstwice">
+                <label for="frequency">Less than twice a year</label>
+                <br>
+                <input name="frequency" id = "frequency" type="radio" value="threefive">
+                <label for="frequency">Three to five times a year</label>
+                <br>
+                <input name = "frequency" id = "frequency" type="radio" value ="moresix">
+                <label for="frequency">More than 6 times a year </label>
+            </section>
+            <scetion>
+                <label for = "opinion">How do you think about the wooden Stem toy?</label>
+                <br>
+                <textarea name="opinion" id="opinion" cols="70" rows="10" maxlength="20"></textarea>
+                
+            </section>
+            <section>
+                <button id = "submit">
+                    Submit
+                </button>
+
+            </section>
+            
+
+
+
+
+        </form>
+        
+            
+        
+    </main>
+    
+
+    
+</body>
+</html>
